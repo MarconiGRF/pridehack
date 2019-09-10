@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -619,4 +620,69 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.slanteDivOne { 
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background: #000000
+}
+
+.slanteDivOne:after { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(2deg);
+}
+
+.headerDivs {
+  text-align: center;
+  margin: auto;
+}
+
+.marginTopBot {
+  margin-top: 10%;
+}
+
+.marginTopBotLow {
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.imgAdequatorLogo {
+  display: inline-block;
+  max-width: 35%; 
+  padding: 5%;
+  margin-left: 5%;
+}
+
+.imgAdequatorRainbow {
+  display: inline-block;
+  max-width: 60%;
+}
+
+.buttonAdequator {
+  width: 100%;
+  background-color: #000000;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 38px;
+  padding: 0.5em 0.3em;
+}
+
+.buttonAdequator:hover {
+  cursor: pointer;
 }

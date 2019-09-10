@@ -1,35 +1,29 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from '../images/logo.svg'
+import rainbow from '../images/rainbow.svg'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header className="slanteDivOne">
+    <div className="headerDivs">
+      <div className="imgAdequatorLogo">
+        <img className="marginTopBot" src={logo}></img>
+        <button onClick={handleClick} className="buttonAdequator marginTopBotLow buttonTextMargin">
+          inscreva-se
+        </button>
+      </div>
+      
+      <div className="imgAdequatorRainbow">
+        <img className="marginTopBot" src={rainbow}></img>
+      </div>
     </div>
   </header>
 )
+
+function handleClick() {
+  window.open('http://gatsbyJS.org', "_blank");
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
