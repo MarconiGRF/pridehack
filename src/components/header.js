@@ -7,14 +7,14 @@ const Header = ({ siteTitle }) => (
   <header className="slanteDivOne">
     <div className="headerDivs">
       <div className="imgAdequatorLogo">
-        <img className="marginTopBot" src={logo}></img>
+        <img className="marginTop" src={logo}></img>
         <button onClick={handleClick} className="buttonAdequator marginTopBotLow buttonTextMargin">
           inscreva-se
         </button>
       </div>
       
       <div className="imgAdequatorRainbow">
-        <img className="marginTopBot" src={rainbow}></img>
+        <img className="marginTop" src={rainbow}></img>
       </div>
     </div>
   </header>

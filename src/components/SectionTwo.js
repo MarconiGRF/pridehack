@@ -1,16 +1,18 @@
 import React from "react"
-//import about from "../images/about.svg"
+import about from "../images/sobre.svg"
+import prizes from "../images/premiacao.svg"
 
 const SectionTwo = () => (
   <header>
     <div>
         <div className="maxWidthHalf floatItLeft">
-            <p className="textParagraphs">Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+            <img className=" imgAdequatorAbout" src={about}></img> 
+            <p className="textParagraphs">O PrideHack é um Hackathon organizado pelo professor Kiev Gama, será realizado nos dias 26 e 27 de outubro, para pessoas LGBTQIA+ que não precisam ser da área de computação. Todo o evento será organizado e mentorado por pessoas da sigla!</p>
         </div>
         <div className="maxWidthHalf floatItLeft">
-          <h1 className="textTitlesLight littleSpaceBot">PREMIAÇÃO</h1>
+          <img className="marginTopHigh" src={prizes}></img> 
           
-          <div className="floatItLeft spaceBot">
+          <div className=" spaceBot">
             <p className="textTitles floatItLeft">1</p>
             <p className="textSubTitles floatItLeft spaceLeft">Em breve</p>
           </div>

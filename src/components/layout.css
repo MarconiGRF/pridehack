@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 @font-face {
   font-family: 'Jellee';
-  src: url("Jellee.otf") format("eot");
+  src: url("https://storage.googleapis.com/guicraft.appspot.com/Jellee.otf") format('otf');
 }
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html {
   font-family: sans-serif;
@@ -674,8 +674,12 @@ pre tt:after {
   margin: auto;
 }
 
-.marginTopBot {
+.marginTop {
   margin-top: 10%;
+}
+
+.marginTopHigh {
+  margin-top: 35%;
 }
 
 .marginTopBotLow {
@@ -693,6 +697,11 @@ pre tt:after {
 .imgAdequatorRainbow {
   display: inline-block;
   max-width: 60%;
+}
+
+.imgAdequatorAbout {
+  display: inline-block;
+  max-width: 50%; 
 }
 
 @media (max-width: 800px) {
@@ -742,6 +751,7 @@ pre tt:after {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 18px;
+  text-align: justify;
 }
 
 .textTitlesLight {
@@ -777,7 +787,7 @@ pre tt:after {
 }
 
 .maxWidthHalf {
-  padding: 15% 8% 15% 8%;
+  padding: 12% 8% 15% 8%;
   max-width: 50%;
 }
 
