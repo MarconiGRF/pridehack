@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
+@font-face {
+  font-family: 'Jellee';
+  src: url("Jellee.otf") format("eot");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
+  font-size: 12px;
 }
 article,
 aside,
@@ -648,16 +655,16 @@ pre tt:after {
 
 .slanteDivRed:after { 
   position: absolute;
-  transform: rotate(2.5deg);
-  -ms-transform: rotate(2.5deg);
-  -webkit-transform: rotate(2.5deg);
-  -o-transform: rotate(2.5deg);
-  -moz-transform: rotate(2.5deg);
+  transform: rotate(2.8deg);
+  -ms-transform: rotate(2.8deg);
+  -webkit-transform: rotate(2.8deg);
+  -o-transform: rotate(2.8deg);
+  -moz-transform: rotate(2.8deg);
   background-color: #b31e14;
   content: "";
   z-index: -2;
   display: inline-block;
-  height: 60px;
+  height: 56px;
   padding: 0;
   width: 102%;
 }
@@ -688,6 +695,32 @@ pre tt:after {
   max-width: 60%;
 }
 
+@media (max-width: 800px) {
+  .imgAdequatorLogo {
+    display: inline-block;
+    max-width: 90%; 
+    padding: 0px 5% 0px;
+    margin-left: 0px;
+  }
+  
+  .imgAdequatorRainbow {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .imageAdequatorRainbow .marginTopBot {
+    margin-top: 0%
+  }
+  
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .buttonAdequator {
+    font-size: 2em;
+  }
+  
+}
+
 .buttonAdequator {
   width: 100%;
   background-color: #000000;
@@ -696,11 +729,66 @@ pre tt:after {
   border-radius: 15px;
   border-color: #FFFFFF;
   color: #FFFFFF;
-  font-family: 'Nunito', sans-serif;
-  font-size: 38px;
+  font-family: 'Jellee', sans-serif;
+  font-size: 3em;
   padding: 0.5em 0.3em;
 }
 
 .buttonAdequator:hover {
   cursor: pointer;
+}
+
+.textParagraphs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.textTitlesLight {
+  font-family: 'Jellee', sans-serif;
+  font-size: 56px;
+  color: black;
+}
+
+.textTitles {
+  font-family: 'Jellee', sans-serif;
+  font-size: 54px;
+  color: black;
+}
+
+.textSubTitles {
+  font-family: 'Jellee', sans-serif;
+  font-size: 48px;
+  color: #DEDEDE;
+}
+
+.floatItLeft {
+  float: left;
+}
+
+.floatItRight {
+  float: right;
+}
+
+
+.alignCenter {
+  text-align: center;
+  align-content: center;
+}
+
+.maxWidthHalf {
+  padding: 15% 8% 15% 8%;
+  max-width: 50%;
+}
+
+.spaceLeft {
+  padding-left: 0.2em;
+}
+
+.spaceBot {
+  padding-bottom: 2.5em;
+}
+
+.littleSpaceBot {
+  padding-bottom: 0.5em;
 }
