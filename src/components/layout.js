@@ -2,8 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import ColorComponent from "../components/colorComponent"
+import ColorComponentOrange from "../components/colorComponentOrange"
 import Header from "./header"
-import SectionTwo from "./SectionTwo"
+import About from "./about"
+import Schedule from "./schedule"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -21,8 +23,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <ColorComponent />
-      <SectionTwo/>
-      <ColorComponent />
+      <About />
+      <ColorComponentOrange color="green" />
+      <Schedule />
     </>
   )
 }

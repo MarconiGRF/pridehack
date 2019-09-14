@@ -9,12 +9,14 @@ class ColorComponent extends React.Component {
     }
 
     render() {
-        return(
-            <div className="slanteDivRed">
+        return (
+            <div className="slanteDivContainer slanteDivAbsoluteFix">
+                <div className="slanteDivRed">
+                </div>
             </div>
         )
     }
- 
+
 }
 
 export default ColorComponent

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Jellee';
-  src: url("https://storage.googleapis.com/guicraft.appspot.com/Jellee.otf") format('otf');
+  src:  url('../fonts/Jellee-Roman.ttf');
 }
 
 html {
@@ -201,10 +201,10 @@ html {
 * {
   box-sizing: inherit;
 }
-*:before {
+*::before {
   box-sizing: inherit;
 }
-*:after {
+*::after {
   box-sizing: inherit;
 }
 body {
@@ -611,23 +611,39 @@ pre code {
   background: none;
   line-height: 1.42;
 }
-code:before,
-code:after,
-tt:before,
-tt:after {
+code::before,
+code::after,
+tt::before,
+tt::after {
   letter-spacing: -0.2em;
   content: " ";
 }
 pre code:before,
 pre code:after,
-pre tt:before,
-pre tt:after {
+pre tt::before,
+pre tt::after {
   content: "";
 }
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
+}
+
+.slanteDivContainer {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slanteDivAbsoluteFix {
+  position: absolute;
+}
+
+.slanteDivOrangeContainer {
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 48px;
 }
 
 .slanteDivOne { 
@@ -637,7 +653,7 @@ pre tt:after {
   background: #000000
 }
 
-.slanteDivOne:after { 
+.slanteDivOne::after { 
   position: absolute;
   width: 100%;
   height: 100%;
@@ -653,7 +669,40 @@ pre tt:after {
   transform: skewY(2deg);
 }
 
-.slanteDivRed:after { 
+.slanteDivTwo { 
+  position: relative;
+  width: 100%;
+  height: 60%;
+  background-color: black;
+}
+
+.slanteDivTwo::before { 
+  top: -5;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(2.4deg);
+  -ms-transform: rotate(2.4deg);
+  -webkit-transform: rotate(2.4deg);
+  -o-transform: rotate(2.4deg);
+  -moz-transform: rotate(2.4deg);
+  background-color: black;
+  content: "";
+  z-index: -2;
+  display: inline-block;
+  height: 128px;
+  padding: 0;
+  width: 101%;
+  margin-left: -8px;
+  margin-top: -48px;
+}
+
+
+.slanteDivRed {
+  /* margin-bottom: 5%; */
+}
+
+.slanteDivRed::after { 
   position: absolute;
   transform: rotate(2.8deg);
   -ms-transform: rotate(2.8deg);
@@ -666,7 +715,30 @@ pre tt:after {
   display: inline-block;
   height: 56px;
   padding: 0;
-  width: 102%;
+  width: 106%;
+  margin-left: -8px;
+}
+
+.slanteDivOrange::after { 
+  position: relative;
+  transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  background-color: #d4852b;
+  content: "";
+  z-index: -2;
+  display: inline-block;
+  height: 56px;
+  padding: 0;
+  width: 106%;
+  margin-left: -8px;
+}
+
+.test {
+  background-color: palevioletred;
+  color: green;
 }
 
 .headerDivs {
@@ -683,7 +755,6 @@ pre tt:after {
 }
 
 .marginTopBotLow {
-  margin-top: 5%;
   margin-bottom: 15%;
 }
 
@@ -704,6 +775,18 @@ pre tt:after {
   max-width: 50%; 
 }
 
+.imgAdequatorSched {
+  display: inline-block;
+  max-width: 50%; 
+  margin-bottom: 0.3em;
+}
+
+.veryMuchSpecificFreakingImgAdequatorForTalkOmgImHungry {
+  display: inline-block;
+  max-width: 70%; 
+  margin-bottom: 0.3em;
+}
+
 @media (max-width: 800px) {
   .imgAdequatorLogo {
     display: inline-block;
@@ -720,6 +803,22 @@ pre tt:after {
   .imageAdequatorRainbow .marginTopBot {
     margin-top: 0%
   }
+
+  .aboutContainer .maxWidthHalf {
+    max-width: 100%;
+  }
+
+  .aboutContainer .paddingTop.spaceBot {
+    padding-top: 20%;
+  }
+  
+  .aboutContainer .paddingTop {
+    padding-top: 0px;
+  }
+
+  .aboutContainer .paddingTop img.marginTopHigh {
+    margin-top: 0px;
+  }
   
 }
 
@@ -733,14 +832,15 @@ pre tt:after {
 .buttonAdequator {
   width: 100%;
   background-color: #000000;
-  border-width: 3px;
+  border-width: 1.5px;
   border-style: solid;
-  border-radius: 15px;
+  border-radius: 8px;
+  letter-spacing: 1px;
   border-color: #FFFFFF;
   color: #FFFFFF;
   font-family: 'Jellee', sans-serif;
-  font-size: 3em;
-  padding: 0.5em 0.3em;
+  font-size: 2em;
+  padding: 0.3em 0.3em;
 }
 
 .buttonAdequator:hover {
@@ -749,7 +849,18 @@ pre tt:after {
 
 .textParagraphs {
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
   font-weight: 600;
+  font-size: 18px;
+  line-height: 1.15rem;
+  text-align: justify;
+}
+
+.textParagraphsWhite {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: white;
+  font-weight: 400;
   font-size: 18px;
   text-align: justify;
 }
@@ -768,8 +879,16 @@ pre tt:after {
 
 .textSubTitles {
   font-family: 'Jellee', sans-serif;
-  font-size: 48px;
+  font-size: 28px;
   color: #DEDEDE;
+}
+
+.textSubTitlesSched {
+  font-family: 'Jellee', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  color: white;
 }
 
 .floatItLeft {
@@ -780,23 +899,45 @@ pre tt:after {
   float: right;
 }
 
-
 .alignCenter {
   text-align: center;
   align-content: center;
 }
 
+.alignLeft {
+  text-align: left;
+}
+
 .maxWidthHalf {
-  padding: 12% 8% 15% 8%;
   max-width: 50%;
 }
 
+.paddingTop {
+  padding-top: 8em;
+}
+.paddingTopLow {
+  padding-top: 4em;
+}
+
+.adjustingPadding {
+  padding-right: 8%;
+  padding-left: 8%;
+}
+
 .spaceLeft {
-  padding-left: 0.2em;
+  margin-left: 0.5em;
+}
+
+.spaceLeftHigh {
+  margin-left: 0.7rem;
+}
+
+.spaceRight {
+  margin-right: 0.2em;
 }
 
 .spaceBot {
-  padding-bottom: 2.5em;
+  padding-bottom: 3em;
 }
 
 .littleSpaceBot {
