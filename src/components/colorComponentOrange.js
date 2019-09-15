@@ -8,9 +8,7 @@ class ColorComponentOrange extends React.Component {
 
     render() {
         return(
-            <div className="slanteDivContainer slanteDivOrangeContainer">
-                <div className="slanteDivOrange" style={{ backgroundColor: this.state.color }}>
-                </div>
+            <div className="slanteDivOrange" style={{ backgroundColor: this.state.color }}>
             </div>
             
         )

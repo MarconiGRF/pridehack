@@ -3,6 +3,7 @@ import React from "react"
 import logo from '../images/logo.svg'
 import rainbow from '../images/rainbow.svg'
 
+
 const Header = ({ siteTitle }) => (
   <header className="slanteDivOne">
     <div className="headerDivs">

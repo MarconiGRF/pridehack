@@ -21,12 +21,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <ColorComponent />
-      <About />
-      <ColorComponentOrange color="green" />
-      <Schedule />
+      <div className="mainContainer">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <ColorComponent /> 
+        <About />
+        <ColorComponentOrange color="green" />
+        <Schedule />
+      </div>
     </>
+
   )
 }
 
