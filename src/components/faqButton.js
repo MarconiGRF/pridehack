@@ -50,7 +50,7 @@ class FaqButton extends React.Component {
             <div>
                 <button className="accordion" onClick={this.toggle.bind(this)}>{this.state.question}<OpenerIcon color={this.state.color} /></button>
                 <div className="panel" style={styleManager.pDivStyle} ref="paragraph">
-                    <p>{this.state.p}</p>
+                    <p className="textParagraphsWhite">{this.state.p}</p>
                 </div>
             </div>
         )

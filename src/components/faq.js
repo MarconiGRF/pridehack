@@ -2,8 +2,6 @@ import React from "react"
 import faq from "../images/faq.svg"
 import logo from '../images/logo.svg'
 import instagram from '../images/instagram.svg'
-import facebook from '../images/facebook.svg'
-import OpenerIcon from "./openerIcon"
 import FaqButton from "./faqButton"
 
 const Faq = () => (
@@ -17,16 +15,21 @@ const Faq = () => (
                 <FaqButton active={false} question=" Qual será o tema?" p="O tema será 'Como melhorar a vivência LGBTQIA+ na universidade?' "
                  color="prideOrange"/>
                 
-                <FaqButton active={false} question=" Como funcionará?" p="O evento acontecerá nos dias 23/11 e 24/11 das 8h às 19h.
-                                                                        Sábado
-                                                                        Manhã: formação de equipes, debate sobre o tema e desenvolvimento da solução;
-                                                                        Tarde: desenvolvimento da solução;
-                                                                        Noite: status report das equipes e desenvolvimento da solução.
+                <FaqButton active={false} question=" Como funcionará?" p={["O evento acontecerá nos dias 23/11 e 24/11 das 8h às 19h.", <br key="zero"></br>, 
+                                                                            <br key="one"></br>,
+                                                                            "Sábado:", <br key="two"></br>,
+                                                                            "Manhã: formação de equipes, debate sobre o tema e desenvolvimento da solução", <br key="three"></br>,
+                                                                            "Tarde: desenvolvimento da solução", <br key="four"></br>,
+                                                                            "Noite: status report das equipes e desenvolvimento da solução.", <br key="five"></br>,
+                                                                            <br key="six"></br>,
+                                                                            "Domingo", <br key="seven"></br>,
+                                                                            "Manhã: desenvolvimento da solução;", <br key="eight"></br>,
+                                                                            "Tarde: workshop sobre pitch, desenvolvimento da solução e submissão dos projetos.", <br key="nine"></br>,
+                                                                            "Noite: apresentação dos pitches e seleção dos vencedores",
+                                                                        ]}
+                                                                            
+                                                                        
 
-                                                                        Domingo
-                                                                        Manhã: desenvolvimento da solução;
-                                                                        Tarde: workshop sobre pitch, desenvolvimento da solução e submissão dos projetos.
-Noite: apresentação dos pitches e seleção dos vencedores"
 
                  color="prideYellow"/>
                 
@@ -36,8 +39,7 @@ Noite: apresentação dos pitches e seleção dos vencedores"
                 <FaqButton active={false} question="Quem pode participar?" p="Estudantes maiores de 18 anos matriculados em cursos de graduação e pós-graduação na UFPE. Não é necessário experiência ou conhecimento prévio em computação ou em qualquer outra área."
                  color="prideBlue"/>
                 
-                <FaqButton active={false} question="Não sou LGBTQIA+, posso participar?" p="Infelizmente, não. 😕
-Desde o começo, idealizamos o Pride Hack como uma forma de acolher e proporcionar espaços de protagonismo para a comunidade LGBTQIA+. Por esse motivo, decidimos abrir as inscrições apenas para membros da comunidade."
+                <FaqButton active={false} question="Não sou LGBTQIA+, posso participar?" p="Infelizmente, não. 😕 Desde o começo, idealizamos o Pride Hack como uma forma de acolher e proporcionar espaços de protagonismo para a comunidade LGBTQIA+. Por esse motivo, decidimos abrir as inscrições apenas para membros da comunidade."
                  color="pridePurple"/>
             </div>
 
@@ -45,11 +47,13 @@ Desde o começo, idealizamos o Pride Hack como uma forma de acolher e proporcion
 
             <div className="footerContainer">
                 <div>
-                <img className="footerLogo" src={logo}></img>
+                    <img className="footerLogo" src={logo}></img>
                 </div>
+                <span className="maxWidth alignCenter">
+                    <a className="conductLink alignMiddle footerLineHeight" target="_blank" href="https://drive.google.com/file/d/11pD_0P7THtksAayd8RPBHgMCn3eGgWh8/view?usp=sharing">Código de conduta</a>
+                </span>
                 <div>
-                    <a href="https://fb.me/"><img className="footerSocial" src={facebook}></img></a>
-                    <a href="https://instagr.am/"><img className="footerSocial" src={instagram}></img></a>
+                    <a href="https://www.instagram.com/pridehack/"><img className="footerSocial" src={instagram}></img></a>
                 </div>
             </div>
 

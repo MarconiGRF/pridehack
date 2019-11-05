@@ -906,7 +906,36 @@ pre tt::after {
   margin-top: 5rem;
 }
 
+.petContainer {
+  max-width: 65%;
+}
+
+.citiContainer {
+  max-width: 50%;
+}
+
+.cinContainer {
+  max-width: 100%;  
+}
+
+
+.fablabContainer {
+  margin-left: 3.5rem;
+  max-width: 50%;
+}
+
+.footerLineHeight {
+  line-height: 6rem;
+}
+
 @media (max-width: 800px) {
+  .footerLineHeight {
+    line-height: 2rem;
+  }
+
+  .fablabContainer {
+    margin-left: 1.2rem;
+  }
   .imgAdequatorLogo {
     display: inline-block;
     max-width: 90%; 
@@ -980,6 +1009,13 @@ pre tt::after {
 }
 
 @media (max-width: 1024px) {
+  .footerLineHeight {
+    line-height: 2.3rem;
+  }
+
+  .fablabContainer {
+    margin-left: 1.2rem;
+  }
 
   .scheduleBox .textSubTitlesSched {
     font-size: 20px;
@@ -1014,6 +1050,10 @@ pre tt::after {
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
+  .footerLineHeight {
+    line-height: 3rem;
+  }
+
   .buttonAdequator {
     font-size: 2em;
   }
@@ -1024,6 +1064,13 @@ pre tt::after {
 }
 
 @media (min-width: 1024px) and (max-width: 1800px) {
+  .footerLineHeight {
+    line-height: 3rem;
+  }
+
+  .fablabContainer {
+    margin-left: 1.2rem;
+  }
 
   .newImgAdequatorAbout {
     display: inline-block;
@@ -1042,6 +1089,13 @@ pre tt::after {
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .footerLineHeight {
+    line-height: 3.6rem;
+  }
+
+  .fablabContainer {
+    margin-left: 1.2rem;
+  }
 
   .newImgAdequatorAbout {
     display: inline-block;
@@ -1061,6 +1115,10 @@ pre tt::after {
 @media (min-width: 1440px) {
   .alignCenter .maxWidthHalf.textParagraphsWhite.inLineBlock {
     margin-top: -72px;
+  }
+
+  .footerLineHeight {
+    line-height: 6rem;
   }
 }
 
@@ -1124,7 +1182,7 @@ pre tt::after {
   font-style: normal;
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
 }
 
@@ -1182,6 +1240,10 @@ pre tt::after {
 
 .alignLeft {
   text-align: left;
+}
+
+.alignRight {
+  text-align: right;
 }
 
 .maxWidthHalf {
@@ -1351,7 +1413,7 @@ button.accordion.active:after {
 
 .footerContainer div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 15%;
 }
 
@@ -1370,4 +1432,41 @@ button.accordion.active:after {
 .marginTopBot {
   margin-bottom: 7%;
   margin-top: 7%;
+}
+
+.marginTopBotLow {
+  margin-bottom: 6%;
+  margin-top: 4%;
+}
+
+.supportContainer {
+  max-width: 60%;
+}
+
+.vintaContainer {
+  max-width: 40%;
+}
+
+.vtexContainer {
+  max-width: 50%;
+}
+
+.shaweeContainer {
+  max-width: 50%;
+}
+
+.maxWidth {
+  max-width: 100%;
+}
+
+.alignMiddle {
+  vertical-align: middle;
+}
+
+.conductLink {
+  color: white;
+  text-align: center;
+  font-family: 'Jellee', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
 }

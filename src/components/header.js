@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
 )
 
 function handleClick() {
-  window.open('http://gatsbyJS.org', "_blank");
+  window.open('http://bit.ly/inscricao-pridehack', "_blank");
 }
 
 Header.propTypes = {

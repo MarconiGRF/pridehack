@@ -39,11 +39,11 @@ const Schedule = () => (
                 <div className="alignCenter">
                         <br/>
                         <div className="inLineBlock maxWidthHalf twentyWidth spaceRight marginTopBotLower">
-                            <button onClick={inscricao} className="inLineBlock buttonAdequator buttonTextMargin">
+                            <button onClick={edital} className="inLineBlock buttonAdequator buttonTextMargin">
                                 ler o edital</button>
                         </div>
                         <div className="inLineBlock maxWidthHalf twentyWidth spaceLeft">
-                            <button onClick={edital} className="buttonAdequator buttonTextMargin">
+                            <button onClick={inscricao} className="buttonAdequator buttonTextMargin">
                                 inscreva-se</button>
                         </div>
                 </div>
@@ -53,11 +53,11 @@ const Schedule = () => (
 )
 
 function inscricao(){
-    window.open("https://app.shawee.io/login?next=/access-code/26601526", "_blank");    
+    window.open("http://bit.ly/inscricao-pridehack", "_blank");    
 }
 
 function edital(){
-    window.open("https://google.com", "_blank");    
+    window.open("http://bit.ly/edital-pridehack", "_blank");    
 }
 
 export default Schedule
