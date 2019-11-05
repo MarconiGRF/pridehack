@@ -6,7 +6,7 @@ class FaqButton extends React.Component {
         super(props);
         this.state = {
             color: props.color,
-            number: props.number,
+            question: props.question,
             active: props.active,
             p: props.p,
             display: "block",
@@ -48,7 +48,7 @@ class FaqButton extends React.Component {
         };
         return (
             <div>
-                <button className="accordion" onClick={this.toggle.bind(this)}>Pergunta {this.state.number} <OpenerIcon color={this.state.color} /></button>
+                <button className="accordion" onClick={this.toggle.bind(this)}>{this.state.question}<OpenerIcon color={this.state.color} /></button>
                 <div className="panel" style={styleManager.pDivStyle} ref="paragraph">
                     <p>{this.state.p}</p>
                 </div>

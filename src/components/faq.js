@@ -11,39 +11,33 @@ const Faq = () => (
         <div className="slanteDivFour">
             <div className="imgAdequatorScheduleContainer adjustingPadding">
                 <img className="imgAdequatorFaq marginTopBotLower" src={faq}></img>
-                <FaqButton active={false} number="Lady Gaga" p="I'm beautiful in my way/
-                                                                'Cause God makes no mistakes/
-                                                                I'm on the right track, baby/
-                                                                I was born this way..." 
+                <FaqButton active={false} question="Onde e quando ocorrerá?" p="O Pride Hack ocorrerá nos dias 23/11 e 24/11, no Centro de Informática da Universidade Federal de Pernambuco (CIn - UFPE)." 
                  color="prideRed"/>
                 
-                <FaqButton active={false} number="Mistress Barbara" p="Come on, be proud of who you are/
-                                                                       Shout it out, you see, it's not so hard!"
+                <FaqButton active={false} question=" Qual será o tema?" p="O tema será 'Como melhorar a vivência LGBTQIA+ na universidade?' "
                  color="prideOrange"/>
                 
-                <FaqButton active={false} number="Hayley Kiyoko" p="Saw your face, heard your name/
-                                                                    Gotta get with you/
-                                                                    Girls like girls like boys do, nothing new/
-                                                                    Isn't this why we came? Gotta get with you/
-                                                                    Girls like girls like boys do, nothing new..."
+                <FaqButton active={false} question=" Como funcionará?" p="O evento acontecerá nos dias 23/11 e 24/11 das 8h às 19h.
+                                                                        Sábado
+                                                                        Manhã: formação de equipes, debate sobre o tema e desenvolvimento da solução;
+                                                                        Tarde: desenvolvimento da solução;
+                                                                        Noite: status report das equipes e desenvolvimento da solução.
+
+                                                                        Domingo
+                                                                        Manhã: desenvolvimento da solução;
+                                                                        Tarde: workshop sobre pitch, desenvolvimento da solução e submissão dos projetos.
+Noite: apresentação dos pitches e seleção dos vencedores"
+
                  color="prideYellow"/>
                 
-                <FaqButton active={false} number="Todrick Hall" p="Girl, what did that girl just say, girl? /
-                                                                   Girl, I don't dance, I work/
-                                                                   I don't play, I slay/
-                                                                   I don't walk I strut, strut, strut and then sashay (okay)..."
+                <FaqButton active={false} question="O que devo levar?" p="Computador, itens de higiene pessoal e quaisquer outros objetos de uso pessoal (ex: celular, fone de ouvido, entre outros...). A alimentação será proporcionada pelo próprio evento. 😉"
                  color="prideGreen"/>
                 
-                <FaqButton active={false} number="Ariana Grande" p="I want it, I got it, I want it, I got it/
-                                                                    You like my hair? Gee, thanks, just bougt it/
-                                                                    I see it, I like it, I want it, I got it (yeah)..."
+                <FaqButton active={false} question="Quem pode participar?" p="Estudantes maiores de 18 anos matriculados em cursos de graduação e pós-graduação na UFPE. Não é necessário experiência ou conhecimento prévio em computação ou em qualquer outra área."
                  color="prideBlue"/>
                 
-                <FaqButton active={false} number="Troye Sivan" p="You don't have to say I love you to say I love you/
-                                                                  Forget all the shooting stars and all the silver moons/
-                                                                  We've been making shades of purple out of red and blue/
-                                                                  Sickeningly sweet like honey, don't need money/
-                                                                  All I need is you..."
+                <FaqButton active={false} question="Não sou LGBTQIA+, posso participar?" p="Infelizmente, não. 😕
+Desde o começo, idealizamos o Pride Hack como uma forma de acolher e proporcionar espaços de protagonismo para a comunidade LGBTQIA+. Por esse motivo, decidimos abrir as inscrições apenas para membros da comunidade."
                  color="pridePurple"/>
             </div>
 

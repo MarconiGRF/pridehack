@@ -638,7 +638,7 @@ pre tt::after {
 .slanteDivContainer {
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
+  height: 15%;
 }
 
 .slanteDivAbsoluteFix {
@@ -861,11 +861,21 @@ pre tt::after {
   margin-bottom: 5%;
 }
 
+.paddingOnSides {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
 .imgAdequatorLogo {
   display: inline-block;
   max-width: 35%; 
   padding: 5%;
   margin-left: 5%;
+}
+
+.newImgAdequatorAbout {
+  display: inline-block;
+  max-width: 35%;
 }
 
 .imgAdequatorRainbow {
@@ -909,6 +919,11 @@ pre tt::after {
     max-width: 100%;
   }
 
+  .paddingOnSides {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .imageAdequatorRainbow .marginTopBot {
     margin-top: 0%
   }
@@ -931,6 +946,10 @@ pre tt::after {
 
   .imgAdequatorScheduleContainer .imgAdequatorAbout {
     max-width: 90%;
+  }
+
+  .newImgAdequatorAbout {
+    max-width: 55%;
   }
 
   .slanteDivTwo .enrollmentAsset {
@@ -975,12 +994,21 @@ pre tt::after {
   }
 
   .scheduleBox .textParagraphsWhite {
-    font-size: 16px;
+    font-size: 18px;
     text-align: inherit;
   }
 
   .slanteDivFour .imgAdequatorFaq {
     max-width: 20%; 
+  }
+
+  .paddingOnSides {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .newImgAdequatorAbout {
+    max-width: 55%;
   }
 
 }
@@ -989,18 +1017,36 @@ pre tt::after {
   .buttonAdequator {
     font-size: 2em;
   }
-  
+
+  .newImgAdequatorAbout {
+    max-width: 35%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1800px) {
+
+  .newImgAdequatorAbout {
+    display: inline-block;
+    max-width: 25%;
+  }
 
   .scheduleBox .textSubTitlesSched {
     font-size: 32px;
   }
 
+  .paddingOnSides {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+
+  .newImgAdequatorAbout {
+    display: inline-block;
+    max-width: 25%;
+  }
 
   .stepOnIt {
     margin-top: 3.5rem;
@@ -1067,9 +1113,9 @@ pre tt::after {
 .textParagraphs {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.15rem;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5rem;
   text-align: justify;
 }
 
@@ -1080,6 +1126,19 @@ pre tt::after {
   font-weight: 400;
   font-size: 18px;
   text-align: justify;
+}
+
+.redHref{
+  color: #B52015;
+  text-decoration: none;
+}
+
+.zIndexHigh {
+  z-index: 1;
+}
+
+.boldIt {
+  font-weight: 600;
 }
 
 .textTitlesLight {
@@ -1306,4 +1365,9 @@ button.accordion.active:after {
 
 .footerSocial {
   width: 100%;
+}
+
+.marginTopBot {
+  margin-bottom: 7%;
+  margin-top: 7%;
 }

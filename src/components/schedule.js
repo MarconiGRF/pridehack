@@ -16,29 +16,27 @@ const Schedule = () => (
                 <div className="scheduleBox">
                     <img className="imgAdequatorSched" src={inscricoes}></img>
                     <h4 className="textSubTitlesSched">Inscrições</h4>
-                    <p className="textParagraphsWhite alignCenter">32/04 a 72/19</p>
+                    <p className="textParagraphsWhite alignCenter">04/11 a 10/11</p>
                 </div>
                 <div className="scheduleBox stepOnIt">
                     <img className="imgAdequatorSched" src={talk}></img>
-                    <h4 className="textSubTitlesSched">Mesa redonda</h4>
-                    <p className="textParagraphsWhite alignCenter">32/04 a 72/19</p>
+                    <h4 className="textSubTitlesSched">Bootcamps</h4>
+                    <p className="textParagraphsWhite alignCenter">11/11 a 12/11</p>
                 </div>
                 <div className="scheduleBox">
                     <img className="imgAdequatorSched" src={selecao}></img>
                     <h4 className="textSubTitlesSched">Seleção</h4>
-                    <p className="textParagraphsWhite alignCenter">32/04 a 72/19</p>
+                    <p className="textParagraphsWhite alignCenter">12/11 a 20/11</p>
                 </div>
                 <div className="scheduleBox stepOnIt">
                     <img className="imgAdequatorSched" src={hack}></img>
                     <h4 className="textSubTitlesSched">Hack Pride</h4>
-                    <p className="textParagraphsWhite alignCenter">32/04 a 72/19</p>
+                    <p className="textParagraphsWhite alignCenter">23/11 e 24/11</p>
                 </div>
             </div>
             <div>
                 <div className="enrollmentAsset"></div>
                 <div className="alignCenter">
-                    <p className="maxWidthHalf textParagraphsWhite inLineBlock">
-                        Cookie ice cream halvah marzipan dessert pudding bonbon. Carrot cake liquorice gummi bears. Lollipop gingerbread jelly gingerbread cake. Soufflé marshmallow pie gingerbread. Chupa chups ice cream brownie icing ice cream icing macaroon. Dessert cookie chocolate cake chocolate cake cake donut pastry gummi bears. Tiramisu chocolate bar caramels caramels jelly beans tart icing sesame snaps. Jelly-o soufflé jujubes wafer pudding lollipop. Sweet roll sesame snaps icing. Jelly beans candy canes gummi bears carrot cake sweet roll. Gummies sweet brownie macaroon bonbon donut chocolate cake jujubes chocolate. Apple pie sweet roll chocolate cake. Cake powder powder lemon drops. Cookie sweet roll cupcake chocolate bar jelly-o.</p>
                         <br/>
                         <div className="inLineBlock maxWidthHalf twentyWidth spaceRight marginTopBotLower">
                             <button onClick={inscricao} className="inLineBlock buttonAdequator buttonTextMargin">
@@ -55,7 +53,7 @@ const Schedule = () => (
 )
 
 function inscricao(){
-    window.open("https://gatsbyjs.org", "_blank");    
+    window.open("https://app.shawee.io/login?next=/access-code/26601526", "_blank");    
 }
 
 function edital(){
